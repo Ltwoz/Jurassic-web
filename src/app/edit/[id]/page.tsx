@@ -18,7 +18,7 @@ export default function EditID({ params }: { params: {id: string} }) {
   const [items, setItems] = useState<User[]>([]);
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await fetch(`https://backend-1whr.vercel.app/api/users/${params.id}`);
+      const res = await fetch(`https://jurassic-web-backend.vercel.app/api/users/${params.id}`);
       const user = await res.json();
       user.map((item: User) => {
         setFirstName(item.firstname);

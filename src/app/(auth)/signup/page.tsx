@@ -21,7 +21,7 @@ export default function Page() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    const res = await fetch("https://backend-1whr.vercel.app/api/users", {
+    const res = await fetch("https://jurassic-web-backend.vercel.app/api/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
